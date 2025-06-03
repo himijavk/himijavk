@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Курс по химии от Виктории</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'DM Sans', 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #2c2c2c, #3f3f3f);
+      color: #f4f4f4;
+    }
+    header {
+      background: linear-gradient(to right, #2c2c2c, #4f4f4f);
+      color: #ffc107;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ddd;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .feature {
+      background: #2c2c2c;
+      border-left: 5px solid #ffc107;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    .cta {
+      background: #333;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 8px;
+      margin-top: 3rem;
+    }
+    .cta button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background: #ffc107;
+      color: #2c2c2c;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .cta button:hover {
+      background: #ffca2c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Онлайн-курс по химии от Виктории</h1>
+    <p>Понимай, решай, сдавай уверенно — с преподавателем, который объясняет просто</p>
+  </header>
+
+  <section>
+    <h2>Что ты получишь:</h2>
+    <div class="features">
+      <div class="feature">🎥 Видеоуроки по ключевым темам: ОВР, растворы, органика</div>
+      <div class="feature">📄 Скачиваемые PDF-шпаргалки и формулы</div>
+      <div class="feature">🧪 Тесты для самопроверки</div>
+      <div class="feature">📲 Поддержка в Telegram — можно задать вопрос</div>
+    </div>
+
+    <div class="cta">
+      <h3>Попробуй бесплатно</h3>
+      <p>Начни с темы «Растворы» — посмотри видеоурок и скачай шпаргалку</p>
+      <button onclick="location.href='index.html'">Перейти к бесплатному уроку</button>
+    </div>
+  </section>
+
+</body>
+</html>
