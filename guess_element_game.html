@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Игра: Угадай элемент</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; text-align: center; padding: 2rem; }
+    .card { background: white; max-width: 500px; margin: auto; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .question { font-size: 1.2rem; margin-bottom: 1rem; }
+    .options button { padding: 0.5rem 1rem; margin: 0.5rem; cursor: pointer; border: none; background: #4CAF50; color: white; border-radius: 4px; }
+    .options button:hover { background: #45a049; }
+    .result { margin-top: 1rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Угадай элемент</h2>
+    <div class="question" id="question">
+      Этот элемент — благородный газ. Не поддерживает горение. Прозрачный. Применяется в неоновых лампах.
+    </div>
+    <div class="options">
+      <button onclick="checkAnswer('Кислород')">Кислород</button>
+      <button onclick="checkAnswer('Азот')">Азот</button>
+      <button onclick="checkAnswer('Неон')">Неон</button>
+      <button onclick="checkAnswer('Водород')">Водород</button>
+    </div>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function checkAnswer(answer) {
+      const result = document.getElementById('result');
+      if (answer === 'Неон') {
+        result.innerHTML = '✅ Верно! Это Неон.';
+        result.style.color = 'green';
+      } else {
+        result.innerHTML = '❌ Неверно. Попробуй ещё раз!';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
